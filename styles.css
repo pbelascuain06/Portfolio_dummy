@@ -28,6 +28,7 @@ body{
 }
 li{
     list-style-type: none;
+    display: inline-block;
 }
 a{
     text-decoration: none;
@@ -41,6 +42,23 @@ ul{
     justify-content: space-around;
     padding-top: 1rem;
     color: white;
+}
+
+a:hover{
+    animation: nav 1s;
+   
+}
+
+@keyframes nav{
+    0%{  
+    }
+    100%{
+        transform: scale (2.0);
+        color: red;
+       text-shadow: 2px 1px cornflowerblue;
+       font-size: 30px;
+       transition: 1s;
+    }
 }
 
 #HOME{
@@ -116,7 +134,7 @@ h1{
 }
 .me:hover{
     color: rgb(136, 84, 7);
-    text-shadow: 2px 2px rgba(240, 240, 235, 0.925)
+    text-shadow: 2px 1px rgba(240, 240, 235, 0.925)
 }
 h3{
     font-family: 'Roboto Condensed', sans-serif;
@@ -153,8 +171,4 @@ h3{
 }
 .inst{
     width: 55px;
-}
-
-@keyframes zoom{
-
 }
